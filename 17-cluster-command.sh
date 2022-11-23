@@ -6,10 +6,17 @@
 sbin/yarn-daemon.sh start resourcemanager
 sbin/yarn-daemon.sh stop resourcemanager
 
-# hadoop集群, hbase集群以及yarn集群启动命令
+# hadoop集群, hbase集群, 以及yarn集群启动命令
 sbin/start-dfs.sh
 bin/start-hbase.sh
 sbin/start-yarn.sh
+
+# 进入hbase命令行
+hbase shell
+
+# hive命令行
+bin/hive
+# hive服务端
 
 # mapreduce自带workcount测试命令
 hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.1.jar workcount /test/djt.txt /test/out/
