@@ -16,6 +16,9 @@
         <module>bd-hadoop</module>
         <module>bd-dependencies</module>
         <module>bd-flume</module>
+        <module>bd-spark</module>
+        <module>bd-flink</module>
+        <module>bd-hive</module>
     </modules>
 
 </project>

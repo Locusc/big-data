@@ -1,3 +1,6 @@
+# 初始化hive元数据表
+schematool -initSchema -dbType mysql
+
 # hive创建外部表
 create external table sogoulogs(id string,datatime string,userid string,searchname string,retorder string,cliorder string,cliurl string)
   STORED BY  'org.apache.hadoop.hive.hbase.HBaseStorageHandler'
