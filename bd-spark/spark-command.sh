@@ -34,3 +34,25 @@ bin/spark-submit --master yarn --class cn.locusc.spark.action.CustomWordCount /h
 # 统计测试scala函数
 val line = sc.textFile("/home/hadoop/app/spark/djt.txt")
 line.flatMap(_.split(" ")).map((_,1)).reduceByKey(_+_).collect().foreach(println)
+
+# spark-sql查询关系型数据库
+val df = spark
+  .read
+  .format("jdbc")
+  .option("url", "jdbc:mysql://39.107.96.199:3306/mercy")
+  .option("dbtable", "newscount")
+  .option("user", "root")
+  .option("password", "wdnmd123")
+  .load()
+
+# spark集成hbase
+cp hbase-client-1.2.0.jar /home/hadoop/app/spark/jars/
+cp hbase-common-1.2.0.jar /home/hadoop/app/spark/jars/
+cp hbase-protocol-1.2.0.jar /home/hadoop/app/spark/jars/
+cp hbase-server-1.2.0.jar /home/hadoop/app/spark/jars/
+cp htrace-core-3.1.0-incubating.jar /home/hadoop/app/spark/jars/
+cp metrics-core-2.2.0.jar /home/hadoop/app/spark/jars/
+cp hive-hbase-handler-2.3.7.jar /home/hadoop/app/spark/jars/
+cp mysql-connector-java-5.1.38.jar /home/hadoop/app/spark/jars/
+
+
