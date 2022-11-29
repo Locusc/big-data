@@ -1,4 +1,4 @@
-package cn.locusc.spark.scala.news.streaming
+package cn.locusc.bd.spark.scala.news.streaming
 
 import java.sql.{Connection, DriverManager}
 import java.util

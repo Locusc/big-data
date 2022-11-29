@@ -1,4 +1,4 @@
-package cn.locusc.spark.scala.news.streaming
+package cn.locusc.bd.spark.scala.news.streaming
 
 import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.apache.spark.sql.streaming.{OutputMode, StreamingQuery, Trigger}

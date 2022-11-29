@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: @project.artifactId@
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.107.96.199:3306/mercy?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: wdnmd123
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp

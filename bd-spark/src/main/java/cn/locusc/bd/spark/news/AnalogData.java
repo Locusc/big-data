@@ -1,4 +1,4 @@
-package cn.locusc.spark.news;
+package cn.locusc.bd.spark.news;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

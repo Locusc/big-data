@@ -1,4 +1,4 @@
-package cn.locusc.spark;
+package cn.locusc.bd.spark;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;

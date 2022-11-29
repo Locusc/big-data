@@ -19,6 +19,7 @@
         <module>bd-spark</module>
         <module>bd-flink</module>
         <module>bd-hive</module>
+        <module>bd-visualization</module>
     </modules>
 
 </project>

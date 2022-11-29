@@ -1,8 +1,8 @@
-package cn.locusc.spark.scala.news.offline
+package cn.locusc.bd.spark.scala.news.offline
 
 import java.sql.{Connection, DriverManager, Statement}
 
-import cn.locusc.spark.scala.news.streaming.BasicConstants
+import cn.locusc.bd.spark.scala.news.streaming.BasicConstants
 import org.apache.spark.sql.{Row, SparkSession}
 
 /**

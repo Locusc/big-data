@@ -1,4 +1,4 @@
-package cn.locusc.spark.scala.basic
+package cn.locusc.bd.spark.scala.basic
 
 import org.apache.spark.{SparkConf, SparkContext}
 

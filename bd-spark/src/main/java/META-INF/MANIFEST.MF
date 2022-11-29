@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: cn.locusc.spark.news.AnalogData
+Main-Class: cn.locusc.bd.spark.news.AnalogData
 
