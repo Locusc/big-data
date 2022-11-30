@@ -50,6 +50,7 @@
         <flume.version>1.8.0</flume.version>
         <spark.version>2.3.0</spark.version>
         <scala.version>2.11.8</scala.version>
+        <flink.version>1.9.1</flink.version>
     </properties>
 
     <dependencyManagement>
@@ -114,6 +115,31 @@
                 <groupId>org.scala-lang</groupId>
                 <artifactId>scala-library</artifactId>
                 <version>${scala.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-java</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-clients_2.12</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-streaming-java_2.11</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-connector-kafka_2.11</artifactId>
+                <version>${flink.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.flink</groupId>
+                <artifactId>flink-jdbc_2.11</artifactId>
+                <version>${flink.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
