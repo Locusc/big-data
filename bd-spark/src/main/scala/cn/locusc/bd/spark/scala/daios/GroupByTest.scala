@@ -44,6 +44,7 @@ object GroupByTest {
     println(results.count())
     println(results.toDebugString) // 打印出形成results的逻辑流程图
 
+    // Thread.sleep(100000)
     spark.stop()
   }
 
