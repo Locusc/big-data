@@ -21,7 +21,7 @@ class JDBCSink(url:String, username:String, password:String, Func: (Row) => ((St
     // connection = DriverManager.getConnection(url, username, password)
     connection = new MySqlPool(url, username, password).getJdbcConn()
     statement = connection.createStatement()
-    return true
+    true
   }
 
   override def process(record: Row) = {
