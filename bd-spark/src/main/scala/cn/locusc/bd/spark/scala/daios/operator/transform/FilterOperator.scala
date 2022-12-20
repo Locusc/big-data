@@ -1,4 +1,4 @@
-package cn.locusc.bd.spark.scala.daios.operator
+package cn.locusc.bd.spark.scala.daios.operator.transform
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.SparkSession
