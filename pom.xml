@@ -20,6 +20,7 @@
         <module>bd-flink</module>
         <module>bd-hive</module>
         <module>bd-visualization</module>
+        <module>bd-flink-1170</module>
     </modules>
 
 </project>
